@@ -2,7 +2,7 @@ FROM fedora:26
 
 RUN dnf -y update && \
     dnf -y install vim bzip2 \
-                   flatpak flatpak-builder && \
+                   flatpak flatpak-builder ostree && \
     dnf -y group install "Development Tools" && \
     dnf -y group install "C Development Tools and Libraries" && \
     dnf -y clean all
